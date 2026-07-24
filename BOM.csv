@@ -1,0 +1,10 @@
+Category,Component,Specification,Quantity,Cost_USD,Source_URL,Notes
+Flight Control,Flight controller,"F405-based, Betaflight 4.5.3",1,,,Add exact model
+Power Electronics,4-in-1 ESC,45 A,1,,,
+Propulsion,Brushless motor,A2212 1000KV,4,,,
+Propulsion,Propeller,7-inch two-blade,2 CW + 2 CCW,,,
+Power,LiPo battery,3S 2200 mAh 25C,1,,,
+Radio,Transmitter,FlySky FS-i6,1,,,
+Radio,Receiver,"FlySky, iBUS",1,,,Add exact model
+Structure,Printed frame,Custom PETG frame,1,,,
+Hardware,Fasteners,Add sizes and quantities,,,,

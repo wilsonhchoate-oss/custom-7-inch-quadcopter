@@ -1,0 +1,11 @@
+# CAD temporary files
+*.bak
+*.tmp
+*.autosave
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large raw video files
+media/videos/raw/
