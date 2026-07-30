@@ -3,7 +3,7 @@
 > A ground-up quadcopter designed, manufactured, assembled, configured, tested, and flown as an independent aerospace engineering project.
 
 <p align="center">
-  <img src="media/images/hero-hover.jpg" alt="Custom quadcopter hovering" width="760">
+  <img src="media/images/hero-render" alt="Custom quadcopter hovering" width="760">
 </p>
 
 <p align="center">
