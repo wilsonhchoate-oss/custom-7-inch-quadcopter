@@ -3,7 +3,13 @@
 > A ground-up quadcopter designed, manufactured, assembled, configured, tested, and flown as an independent aerospace engineering project.
 
 <p align="center">
+<<<<<<< HEAD
   <img src="media/images/hero-render" alt="Custom quadcopter hovering" width="760">
+=======
+  <img src="drone_pictures/hero_render.png"
+       alt="Custom 7-Inch Quadcopter CAD Render"
+       width="850">
+>>>>>>> cde3702 (Update README image path)
 </p>
 
 <p align="center">
