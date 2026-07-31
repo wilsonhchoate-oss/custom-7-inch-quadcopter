@@ -40,16 +40,18 @@ Record the final settings used:
 |---|---|
 | Printer | Bambu Lab A1 |
 | Material | PETG |
-| Nozzle diameter | ADD |
-| Layer height | ADD |
+| Nozzle diameter | 0.40 mm |
+| Layer height | 0.20 mm |
 | Wall loops | ADD |
 | Top layers | ADD |
 | Bottom layers | ADD |
-| Infill percentage | ADD |
-| Infill pattern | ADD |
+| Infill percentage | 35% |
+| Infill pattern | Gyroid |
 | Nozzle temperature | ADD |
 | Bed temperature | ADD |
 | Total frame print mass | ADD |
+
+*(Nozzle diameter, layer height, and infill pulled from the `Overall_frame_dimensions` drawing notes — remaining fields need to be pulled from your slicer profile.)*
 
 ## Design Evolution
 
