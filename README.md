@@ -14,6 +14,23 @@
   <b>Mechanical Design</b> · <b>Additive Manufacturing</b> · <b>Electronics Integration</b> · <b>Flight Controls</b> · <b>Testing & Troubleshooting</b>
 </p>
 
+
+## Flight Demonstration
+
+The custom quadcopter successfully achieved takeoff, stable hover, and controlled flight after iterative mechanical and software refinement.
+
+<p align="center">
+  <img src="media/images/final-drone.jpg"
+       alt="Completed quadcopter"
+       width="700">
+</p>
+
+> 🎥 **Hover Flight Video**
+>
+> [Watch the flight demonstration](media/videos/hover-test.mp4)
+
+
+
 ## Project Overview
 
 I designed and built a custom quadcopter to develop hands-on experience with airframe design, CAD, additive manufacturing, propulsion integration, wiring, flight-controller configuration, and iterative flight testing.
@@ -31,9 +48,6 @@ Unlike a kit build, the airframe was modeled in Fusion 360 and manufactured in P
 - **Airframe material:** PETG
 - **CAD platform:** Autodesk Fusion 360
 
-> Add a 10–20 second hover video here once recorded:
->
-> **[Watch the flight test](media/videos/hover-test.mp4)**
 
 ## Why I Built It
 
@@ -47,6 +61,33 @@ The goal was not only to make a drone fly. The goal was to complete a full engin
 6. Test subsystems safely.
 7. Diagnose failures and revise the design.
 8. Demonstrate stable flight.
+
+
+## Engineering Development Process
+
+```text
+Requirements
+      ↓
+Component Selection
+      ↓
+CAD Design (Fusion 360)
+      ↓
+3D Printing (PETG)
+      ↓
+Mechanical Assembly
+      ↓
+Electronics Integration
+      ↓
+Betaflight Configuration
+      ↓
+Subsystem Testing
+      ↓
+Flight Testing
+      ↓
+Successful Hover
+```
+
+
 
 ## Engineering Highlights
 
@@ -135,6 +176,30 @@ The airframe was developed around the physical size of the electronics stack, mo
 
 More detail: **[Mechanical Design](docs/DESIGN.md)**
 
+
+## CAD Assembly
+
+<Assembly Image>
+
+The quadcopter was designed as a modular assembly consisting of replaceable motor arms, a two-piece center plate, and commercially available propulsion and control components.
+
+<p align="center">
+  <img src="media/images/exploded-view.png"
+       width="700">
+</p>
+
+The exploded assembly illustrates how the custom manufactured components integrate with the electronics and propulsion system.
+
+
+## Engineering Documentation
+
+<p align="center">
+<img src="media/images/assembly-drawing.png" width="700">
+</p>
+
+Professional engineering drawings were created directly from the Fusion 360 assembly including dimensions, exploded views, bill of materials, and assembly references.
+
+
 ## Assembly & Wiring
 
 <p align="center">
@@ -160,6 +225,22 @@ The vehicle was tested incrementally rather than proceeding directly to full fli
 - Hover and controlled-flight demonstration
 
 More detail: **[Testing and Validation](docs/TESTING.md)**
+
+
+## Lessons Learned
+
+This project emphasized the importance of validating each subsystem independently before full system integration.
+
+Some of the most valuable lessons included:
+
+- Mechanical design must consider manufacturing and assembly simultaneously.
+- Flight controller orientation is critical for stable flight.
+- Propeller orientation and motor direction should always be verified independently.
+- Careful soldering and wire management improve long-term reliability.
+- Incremental testing dramatically reduces troubleshooting time.
+- Engineering documentation is just as important as the finished hardware.
+
+
 
 ## Skills Demonstrated
 
@@ -209,9 +290,3 @@ Aerospace Engineering Student, Penn State University
 - LinkedIn: `ADD_LINKEDIN_URL`
 - GitHub: `ADD_GITHUB_PROFILE_URL`
 - Email: `ADD_PROFESSIONAL_EMAIL`
-
----
-
-### Repository Status
-
-**Functional prototype — flight demonstrated.** Documentation and quantitative testing are continuing.
