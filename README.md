@@ -14,20 +14,20 @@
 
 ## Flight Demonstration
 
-The custom quadcopter achieved takeoff, stable hover, and controlled flight after several rounds of mechanical and software refinement — from a first flip on takeoff to a clean hover.
+The custom quadcopter has achieved takeoff and brief low-altitude hover after several rounds of mechanical and software refinement — from a first flip on takeoff to lifting off under its own control. There's still a noticeable drift I haven't fully tuned out yet, and I'm still building up flight time as a pilot, so this is an active work in progress rather than a finished, polished flier.
 
-<!--
-ADD REAL FOOTAGE HERE — highest-impact fix left on this page:
 <p align="center">
-  <img src="media/images/final-drone.jpg" alt="Completed quadcopter in hover" width="700">
+  <img src="media/images/field-test.jpg" alt="Outdoor low-altitude flight test" width="700">
 </p>
 
-> 🎥 **Hover Flight Video**
->
-> [Watch the flight demonstration](media/videos/hover-test.mp4)
--->
+*Early outdoor test: takeoff and hover achieved with some drift. Further testing in a larger open field is planned to work out the drift and build up stick time.*
 
-*Real hover photo and flight video coming soon — see the shot list below.*
+## Origin Story
+
+I didn't set out knowing how drones worked — I wanted to find out, and to prove to myself I could design and build something that actually flies. This project went through two full builds:
+
+1. **An Arduino-based prototype** (scrapped fall 2025) — a self-taught first attempt using an Arduino Uno, an MPU-6050 gyroscope, and a practice PID loop. It never got off the ground, but it's the reason this build exists. Full story: **[The Arduino Prototype](docs/ARDUINO_PROTOTYPE.md)**
+2. **This build** — a dedicated F405 flight controller and Betaflight, a frame designed from scratch through multiple iterations, and a design philosophy built around surviving crashes rather than avoiding them.
 
 ## Project Overview
 
@@ -37,7 +37,7 @@ Unlike a kit build, the airframe was modeled in Fusion 360 and manufactured in-h
 
 ### Final Result
 
-- **Flight status:** Successful takeoff, hover, and controlled flight
+- **Flight status:** Takeoff and low-altitude hover achieved; drift tuning and further open-field testing in progress
 - **Final mass:** Approximately **756 g**
 - **Configuration:** Custom X-configuration quadcopter
 - **Propellers:** 7-inch, two-blade
@@ -119,7 +119,7 @@ The project included several real failures before successful flight — this is 
 | Receiver setup problems | Checked wiring, protocol, channel mapping, and endpoints | Switched to iBUS wiring and configured usable channel ranges |
 | Motor speed appeared to increase without throttle input | Evaluated behavior with props removed and during attitude disturbances | Identified normal stabilization behavior and avoided unsafe restrained testing with props on |
 | Suspected unreliable electrical joints | Inspected, resoldered, and insulated connections | Improved electrical reliability and assembly quality |
-| Initial flight instability and drift | Rechecked calibration and practiced small control inputs | Achieved stable hover; future work includes PID tuning and pilot practice |
+| Flight instability and drift during hover | Rechecked calibration and practiced small control inputs | Achieved takeoff and hover; drift is not fully resolved — PID/rate tuning and more open-field flight time are in progress |
 
 ## System Specifications
 
@@ -143,17 +143,19 @@ The project included several real failures before successful flight — this is 
 custom-7-inch-quadcopter/
 ├── README.md                  # Project overview and recruiter-facing summary
 ├── docs/
-│   ├── DESIGN.md               # Requirements, CAD decisions, and manufacturing
-│   ├── ELECTRONICS.md          # Wiring and component integration
-│   ├── TESTING.md              # Test plan, failures, and flight validation
-│   └── LESSONS_LEARNED.md      # Engineering reflection
+│   ├── ARDUINO_PROTOTYPE.md     # Origin story: the scrapped Arduino/MPU-6050 build
+│   ├── DESIGN.md                # Requirements, CAD decisions, and manufacturing
+│   ├── ELECTRONICS.md           # Wiring and component integration
+│   ├── TESTING.md               # Test plan, failures, and flight validation
+│   └── LESSONS_LEARNED.md       # Engineering reflection
 ├── media/
-│   ├── images/                 # Build, CAD, wiring, and flight photos
-│   └── videos/                 # Hover, flight, and CAD animation clips
-├── cad/                        # Fusion 360 exports: assemblies, drawings, components
-├── config/                     # Betaflight backup and settings notes
-├── test-data/                  # Mass, motor, battery, and flight-test records
-├── BOM.csv                     # Bill of materials
+│   ├── images/                  # Build, CAD, wiring, and flight photos
+│   ├── sketches/                # Design-notebook pages: calcs, geometry, trade studies
+│   └── videos/                  # Hover, flight, and CAD animation clips
+├── cad/                         # Fusion 360 exports: assemblies, drawings, components
+├── config/                      # Betaflight backup and settings notes
+├── test-data/                   # Mass, motor, battery, and flight-test records
+├── BOM.csv                      # Bill of materials
 └── .gitignore
 ```
 
@@ -189,12 +191,9 @@ Full engineering drawings were generated directly from the Fusion 360 assembly, 
 
 ## Assembly & Wiring
 
-<!--
-ADD REAL WIRING PHOTO HERE, then uncomment:
 <p align="center">
   <img src="media/images/electronics-stack.jpg" alt="Quadcopter electronics stack and wiring" width="700">
 </p>
--->
 
 Assembly required careful management of motor-wire routing, solder-joint quality, receiver connections, component orientation, and clear access to the flight-controller USB port.
 
@@ -212,7 +211,7 @@ The vehicle was tested incrementally rather than jumping straight to full flight
 - Motor order and direction verification
 - Accelerometer and orientation verification
 - Low-altitude takeoff tests
-- Hover and controlled-flight demonstration
+- Low-altitude hover demonstration (drift tuning and further open-field testing in progress)
 
 More detail: **[Testing and Validation](docs/TESTING.md)**
 

@@ -18,25 +18,33 @@ Flight Controller
 
 ## Wiring Documentation
 
-Add a clear wiring diagram and close-up photographs. Label:
+<p align="center">
+  <img src="../media/images/electronics-stack.jpg" alt="Frame wiring: motors, ESC, and flight controller" width="700">
+</p>
 
-- Battery positive and ground
-- ESC-to-flight-controller connection
-- Motor outputs 1–4
-- Receiver 5 V, ground, and iBUS signal
-- Flight-controller orientation arrow
-- USB access direction
+<p align="center">
+  <img src="../media/images/receiver-wiring.jpg" alt="FlySky FS-iA6B receiver iBUS wiring" width="500">
+</p>
+
+The receiver connection is a single iBUS signal wire plus power/ground from the flight controller, rather than one wire per channel. Motor outputs, ESC power leads, and the receiver connection were kept physically separated where possible to make later troubleshooting easier.
+
+Note on the onboard sensor: this build's attitude sensing comes from the F405 flight controller's own IMU. The earlier [Arduino prototype](ARDUINO_PROTOTYPE.md) used a standalone MPU-6050 breakout wired to an Arduino Uno — that sensor and control loop were retired along with the rest of that build.
 
 ## Configuration Summary
+
+<p align="center">
+  <img src="../media/sketches/sketch-channel-map.png" alt="Transmitter channel mapping notes" width="500">
+</p>
 
 | Setting | Value |
 |---|---|
 | Firmware | Betaflight 4.5.3 |
 | Receiver protocol | iBUS |
 | Arm control | AUX switch |
+| Transmitter | FlySky FS-i6, Mode 2 |
+| Channel map | CH1 = Roll (right stick, left/right), CH2 = Pitch (right stick, up/down), CH3 = Throttle (left stick, up/down), CH4 = Yaw (left stick, left/right) |
 | Motor protocol | ADD |
 | Board alignment | ADD FINAL VALUES |
-| Channel map | ADD |
 | Failsafe behavior | ADD |
 
 ## Quality Checks

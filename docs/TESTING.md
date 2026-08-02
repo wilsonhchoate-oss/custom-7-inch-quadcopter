@@ -18,8 +18,8 @@ Testing progressed from low-risk subsystem checks to integrated flight tests. Pr
 | One-minute motor run | Props removed | No abnormal heating or vibration | PASS |
 | Low-throttle test | Props installed | Symmetric spool-up | PASS |
 | Takeoff test | Open area | Clean liftoff without tip-over | PASS AFTER ITERATION |
-| Hover test | Low altitude | Sustained controlled hover | PASS |
-| Controlled flight | Open area | Pilot can translate and land safely | PASS |
+| Hover test | Low altitude | Sustained controlled hover | PASS WITH DRIFT — hover achieved, drift not yet tuned out |
+| Controlled flight | Open area | Pilot can translate and land safely | IN PROGRESS — limited so far by available open space and pilot experience; further open-field testing planned |
 
 ## Failure Analysis
 
@@ -47,18 +47,35 @@ Testing progressed from low-risk subsystem checks to integrated flight tests. Pr
 6. Recalibrated the accelerometer on a level surface.
 7. Retested on a flat, rigid surface.
 
-**Outcome:** Successful flight was achieved after configuration and assembly checks.
+**Outcome:** Successful takeoff and hover were achieved after configuration and assembly checks.
 
-## Flight Evidence to Add
+<p align="center">
+  <img src="../media/images/motor-direction-labels.jpg" alt="Hand-labeled CW/CCW motor rotation reference" width="600">
+</p>
 
-Capture:
+<p align="center">
+  <img src="../media/images/betaflight-calibration.jpg" alt="Betaflight orientation model and accelerometer calibration" width="600">
+</p>
 
-- 10–20 second stationary hover from the side.
-- Takeoff, short translation, and landing.
-- Close-up image of the completed vehicle.
-- Top, bottom, and side views.
-- One image with the battery installed.
-- One image showing the controller and aircraft together.
+### Ongoing: Hover Drift
+
+The vehicle hovers but drifts noticeably rather than holding a fixed position. This hasn't been resolved yet — the current plan is more PID/rate tuning combined with additional stick time in a properly open field (the available test space so far has been tight, which limits how aggressively drift can be safely corrected mid-flight).
+
+<p align="center">
+  <img src="../media/images/field-test.jpg" alt="Outdoor low-altitude test setup" width="600">
+</p>
+
+## Flight Evidence Captured So Far
+
+- Outdoor low-altitude hover test (above).
+- Motor CW/CCW direction reference used during setup.
+- Betaflight accelerometer calibration and orientation-model verification.
+
+**Still to capture:**
+
+- 10–20 second stationary hover from the side, once drift is tuned out.
+- Takeoff, short translation, and landing, in a larger open field.
+- Top, bottom, and side views of the finished vehicle.
 
 ## Quantitative Data to Add
 

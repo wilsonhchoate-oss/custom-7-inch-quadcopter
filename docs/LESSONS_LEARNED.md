@@ -23,3 +23,11 @@ Photographs of failed revisions, wiring changes, and test setups are more valuab
 ## 6. Successful flight is not the end of the project
 
 A functional prototype creates opportunities for better testing: vibration logging, PID tuning, static thrust measurement, structural analysis, CFD, mass optimization, and autonomous flight.
+
+## 7. A bad first attempt is still progress
+
+The [Arduino/MPU-6050 prototype](ARDUINO_PROTOTYPE.md) never hovered, and the frame it used wasn't structurally sound enough to survive a real crash. Scrapping it wasn't wasted effort — it's the reason this build uses a dedicated flight-controller/ESC stack instead of a hand-rolled control loop, and the direct reason crash survivability became a hard requirement for the current frame's fastener and joint design.
+
+## 8. Test-site quality is part of the engineering problem, not separate from it
+
+A cramped test area limits how much you can learn about a real issue like hover drift — you can't safely push the vehicle enough to characterize the problem, let alone fix it. Planning for a properly open flight-test site turned out to matter as much as any single tuning parameter.
