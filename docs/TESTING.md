@@ -73,6 +73,10 @@ Moving the test to a genuinely open field (rather than the tighter space used fo
 That flight ended when a propeller detached in flight at altitude. With no propeller on that motor, the vehicle lost lift on that corner and free-fell, breaking an arm/motor mount on impact.
 
 <p align="center">
+  <a href="../media/videos/flight-test-altitude-and-fall.mp4">🎥 High-altitude flight through the in-flight failure</a>
+</p>
+
+<p align="center">
   <img src="../media/images/broken-arm.jpg" alt="Arm/motor mount broken after in-flight propeller detachment" width="600">
 </p>
 
