@@ -30,4 +30,12 @@ The [Arduino/MPU-6050 prototype](ARDUINO_PROTOTYPE.md) never hovered, and the fr
 
 ## 8. Test-site quality is part of the engineering problem, not separate from it
 
-A cramped test area limits how much you can learn about a real issue like hover drift — you can't safely push the vehicle enough to characterize the problem, let alone fix it. Planning for a properly open flight-test site turned out to matter as much as any single tuning parameter.
+A cramped test area limits how much you can learn about a real issue like hover drift — you can't safely push the vehicle enough to characterize the problem, let alone fix it. Planning for a properly open flight-test site turned out to matter as much as any single tuning parameter. This held up: moving to a genuinely open field resolved the drift completely and produced a stable flight to ~200 ft.
+
+## 9. A structural design is only as good as the impact it was designed for
+
+The fastener/joint design was built to survive minor low-altitude crashes, and it did — repeatedly, with zero damage. A ~200 ft free-fall after an in-flight propeller detachment broke an arm anyway. That's not evidence the design failed; it's evidence the impact was outside the envelope the design was ever rated for. Knowing the difference between "the design failed" and "the event exceeded the design envelope" matters — it changes what you actually fix.
+
+## 10. The checklist is only as good as what's on it
+
+Every pre-flight check up to this point — motor order, motor direction, board orientation, accelerometer calibration, receiver response — was verified individually before this flight. Propeller retention wasn't on that list, and it's the thing that ended the flight. A checklist doesn't protect against the failure mode you didn't think to add.

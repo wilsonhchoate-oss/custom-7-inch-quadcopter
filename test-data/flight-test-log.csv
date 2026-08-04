@@ -1,3 +1,3 @@
 Date,Configuration,Mass_g,Propeller,Battery_Start_V,Battery_End_V,Hover_Throttle,Flight_Time_s,Wind,Result,Notes
 2026-07-22,Initial outdoor low-altitude test,756,7-inch two-blade,,,,,Light,PARTIAL,Takeoff and hover achieved; noticeable drift not yet tuned out. Voltage/throttle/time not yet instrumented.
-YYYY-MM-DD,Open-field retest,756,7-inch two-blade,,,,,,,Planned follow-up test in a larger open field to work on drift and gather real flight-time/throttle data.
+2026-08-03,Open-field high-altitude test,756,7-inch two-blade,,,,~90,Light,PASS THEN CRASH,Sustained stable flight to ~200 ft with no drift issues. A propeller detached in flight at the end of the flight; vehicle free-fell and broke an arm on impact. Voltage/throttle/precise altitude not yet instrumented.

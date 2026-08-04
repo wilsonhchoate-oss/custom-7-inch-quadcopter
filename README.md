@@ -14,13 +14,17 @@
 
 ## Flight Demonstration
 
-The custom quadcopter has achieved takeoff and brief low-altitude hover after several rounds of mechanical and software refinement — from a first flip on takeoff to lifting off under its own control. There's still a noticeable drift I haven't fully tuned out yet, and I'm still building up flight time as a pilot, so this is an active work in progress rather than a finished, polished flier.
+The custom quadcopter achieved a sustained, stable, high-altitude flight (~200 ft) in an open field — real validation that the airframe, electronics, and tuning all work together as an integrated system, not just in short hops.
 
 <p align="center">
-  <img src="media/images/field-test.jpg" alt="Outdoor low-altitude flight test" width="700">
+  <img src="media/images/hero-hover.jpg" alt="Quadcopter in stable high-altitude flight" width="700">
 </p>
 
-*Early outdoor test: takeoff and hover achieved with some drift. Further testing in a larger open field is planned to work out the drift and build up stick time.*
+<p align="center">
+  <a href="media/videos/flight-test-highlight.mp4">🎥 Watch the flight-test highlight clip</a>
+</p>
+
+That same flight ended the test session: a propeller detached in flight at altitude, and the vehicle free-fell and broke an arm on impact. The frame's fastener/joint design (see [Mechanical Design](docs/DESIGN.md)) is rated for minor low-altitude impacts, not a ~200 ft free-fall — this wasn't a repeat of the earlier structural problems, it's a distinct propeller-retention issue. The fix is a straightforward arm reprint, and I'm evaluating wall count and infill changes for added strength while I'm at it. See [Testing and Validation](docs/TESTING.md) for the full writeup.
 
 ## Origin Story
 
@@ -37,7 +41,7 @@ Unlike a kit build, the airframe was modeled in Fusion 360 and manufactured in-h
 
 ### Final Result
 
-- **Flight status:** Takeoff and low-altitude hover achieved; drift tuning and further open-field testing in progress
+- **Flight status:** Achieved sustained, stable flight to ~200 ft altitude in an open field; a propeller detached at the end of that flight, breaking an arm on impact (repair: reprint in progress)
 - **Final mass:** Approximately **756 g**
 - **Configuration:** Custom X-configuration quadcopter
 - **Propellers:** 7-inch, two-blade
@@ -119,7 +123,8 @@ The project included several real failures before successful flight — this is 
 | Receiver setup problems | Checked wiring, protocol, channel mapping, and endpoints | Switched to iBUS wiring and configured usable channel ranges |
 | Motor speed appeared to increase without throttle input | Evaluated behavior with props removed and during attitude disturbances | Identified normal stabilization behavior and avoided unsafe restrained testing with props on |
 | Suspected unreliable electrical joints | Inspected, resoldered, and insulated connections | Improved electrical reliability and assembly quality |
-| Flight instability and drift during hover | Rechecked calibration and practiced small control inputs | Achieved takeoff and hover; drift is not fully resolved — PID/rate tuning and more open-field flight time are in progress |
+| Flight instability and drift during hover | Rechecked calibration and practiced small control inputs | Achieved stable, sustained high-altitude flight in an open field — drift was not an issue during this test |
+| Propeller detached in flight at ~200 ft, vehicle free-fell and broke an arm on impact | Inspected the frame post-crash; damage was isolated to one arm/motor mount | Not a repeat of earlier structural issues — a distinct propeller-retention problem. Fix: reprint the arm (evaluating wall count/infill for added strength); add a pre-flight prop-security check to the routine |
 
 ## System Specifications
 
@@ -211,7 +216,8 @@ The vehicle was tested incrementally rather than jumping straight to full flight
 - Motor order and direction verification
 - Accelerometer and orientation verification
 - Low-altitude takeoff tests
-- Low-altitude hover demonstration (drift tuning and further open-field testing in progress)
+- Sustained high-altitude flight test (~200 ft) in an open field
+- Post-crash inspection and failure analysis after an in-flight propeller detachment
 
 More detail: **[Testing and Validation](docs/TESTING.md)**
 
@@ -227,6 +233,8 @@ Some of the most valuable lessons:
 - Careful soldering and wire management pay off in reliability, not just at final assembly but every time you open the frame back up.
 - Incremental, isolated testing dramatically cuts down troubleshooting time.
 - Documentation is part of the deliverable, not an afterthought — this README is as much a part of the project as the frame is.
+- A structural design is only rated for the impacts it was designed for — a frame built to survive minor low-altitude tip-overs isn't expected to survive a ~200 ft free-fall undamaged, and that's a different conversation than whether the design "failed."
+- Propeller retention deserves the same rigor as everything else that gets checked pre-flight — it was the one thing not on the routine checklist, and it's the thing that ended the flight.
 
 ## Skills Demonstrated
 
@@ -244,8 +252,8 @@ Some of the most valuable lessons:
 
 ## Current Limitations
 
-- The vehicle still needs tuning for smoother low-altitude flight.
-- Pilot control proficiency is still developing.
+- One arm needs to be reprinted after the propeller-detachment crash; the vehicle is grounded until that repair is complete.
+- Propeller retention doesn't yet have a formal pre-flight check — that's the direct fix coming out of this test.
 - Flight time, vibration, and thrust data haven't been formally measured yet.
 - Structural performance hasn't been validated with FEA or physical load testing.
 - Aerodynamic performance hasn't been evaluated with CFD.
@@ -254,10 +262,10 @@ Being explicit about limitations matters: this repository documents a functional
 
 ## Future Work
 
-- Record stabilized hover and forward-flight video.
+- Add a propeller-security check (torque/thread-locker verification) to the pre-flight routine.
+- Re-evaluate arm wall count and infill for additional impact strength.
 - Measure flight time and battery voltage under load.
 - Log vibration and gyro data.
-- Tune PID and rate settings for low-altitude stability.
 - Perform static thrust testing.
 - Run structural FEA on the arms and center plates.
 - Run a basic CFD study around the frame and propeller slipstream.
@@ -266,7 +274,7 @@ Being explicit about limitations matters: this repository documents a functional
 
 ## Safety
 
-Propellers were removed during configuration and motor-direction testing. Initial power-up used a smoke stopper, and flight testing was performed at low altitude in an open area.
+Propellers were removed during configuration and motor-direction testing, and initial power-up used a smoke stopper. Flight testing progressed from low-altitude hovers to a sustained high-altitude flight (~200 ft) in a large, open area, clear of people and structures.
 
 ## Author
 

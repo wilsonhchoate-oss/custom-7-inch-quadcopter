@@ -55,7 +55,7 @@ The design that survived testing:
 - **Two small alignment pegs** on the center plate seat into matching pockets in the arm, resisting side-to-side (left-right) shear that the screws alone don't fully constrain.
 - Edges around the protruding boss on the center plate were rounded rather than left square, specifically to reduce stress concentration at that feature.
 
-This combination is why the frame has survived several crashes with no structural damage so far. I can't say for certain how much the alignment pegs specifically reduce vibration — subjectively the vehicle doesn't vibrate much in flight, but that hasn't been measured.
+This combination is why the frame survived several minor low-altitude crashes with no structural damage. It's not rated for everything, though: a ~200 ft free-fall following an in-flight propeller detachment (see [Testing and Validation](TESTING.md)) broke one arm/motor mount — an impact well outside what "minor low-altitude" was ever meant to cover. The fact that only one arm broke, rather than the whole frame, is at least consistent with the modular-repair intent even under an out-of-envelope impact. I can't say for certain how much the alignment pegs specifically reduce vibration — subjectively the vehicle doesn't vibrate much in flight, but that hasn't been measured.
 
 ## Battery Mounting
 
@@ -85,6 +85,8 @@ The current frame is the result of several distinct attempts, not a single desig
 3. **Actual frame design:** converged on the current geometry, then layered in the fastener and joint design (above) once the base geometry was solid.
 
 Each revision was driven by a concrete problem with the one before it — either the geometry didn't leave room for the electronics, or the joint wasn't going to survive a real crash.
+
+4. **Arm reprint (in progress):** after the ~200 ft free-fall broke an arm/motor mount, I'm reprinting that arm and evaluating an increased wall count and infill percentage for additional impact strength — a direct response to a real, out-of-envelope impact rather than a guess.
 
 ## Manufacturing
 
