@@ -1,6 +1,6 @@
 # Custom 7-Inch Quadcopter
 
-> A ground-up quadcopter designed, manufactured, assembled, configured, tested, and flown as an independent aerospace engineering project.
+> A custom drone I designed, built, and got flying—learning CAD, 3D printing, electronics, and flight control along the way.
 
 
 <p align="center">
@@ -25,9 +25,9 @@ The custom quadcopter successfully achieved takeoff, stable hover, and controlle
 
 ## Project Overview
 
-I designed and built a custom quadcopter to develop hands-on experience with airframe design, CAD, additive manufacturing, propulsion integration, wiring, flight-controller configuration, and iterative flight testing.
+I wanted to learn everything end-to-end. So instead of buying a kit, I designed the frame in Fusion 360, printed it in PETG, integrated all the electronics and motors, and got it flying. It's been a really fun way to learn about how all these systems actually work.
 
-Unlike a kit build, the airframe was modeled in Fusion 360 and manufactured in PETG. The project required integrating the frame, motors, electronic speed controller, flight controller, receiver, battery, and propellers into a working aircraft. The final vehicle achieved controlled flight after multiple design, configuration, and troubleshooting iterations.
+
 
 ### Final Result
 
@@ -43,16 +43,9 @@ Unlike a kit build, the airframe was modeled in Fusion 360 and manufactured in P
 
 ## Why I Built It
 
-The goal was not only to make a drone fly. The goal was to complete a full engineering cycle:
+Honestly, I just wanted to build a drone and understand how everything works. I wanted to learn how all the parts—motors, controllers, propellers, radio—actually work together as a system. And yeah, I wanted to actually fly something I built myself.
 
-1. Define requirements and constraints.
-2. Select compatible propulsion and control hardware.
-3. Design a manufacturable airframe.
-4. Fabricate and assemble the system.
-5. Configure the flight controller and radio.
-6. Test subsystems safely.
-7. Diagnose failures and revise the design.
-8. Demonstrate stable flight.
+Beyond that, I also wanted to create a custom frame that I could iterate on and improve over time. Every drone project I do teaches me something new, and I can take those lessons and build better versions. That's what excites me about engineering—the continuous improvement cycle and the hands-on learning that comes with it.
 
 
 ## Engineering Development Process
