@@ -262,7 +262,6 @@ Being explicit about limitations matters: this repository documents a functional
 
 ## Future Work
 
-- Add a propeller-security check (torque/thread-locker verification) to the pre-flight routine.
 - Re-evaluate arm wall count and infill for additional impact strength.
 - Measure flight time and battery voltage under load.
 - Log vibration and gyro data.
@@ -281,6 +280,6 @@ Propellers were removed during configuration and motor-direction testing, and in
 **Wilson Henry Choate**
 Aerospace Engineering Student, Penn State University
 
-- LinkedIn: `ADD_LINKEDIN_URL`
+- LinkedIn: `https://www.linkedin.com/in/wilson-choate-252b5232a/`
 - GitHub: `ADD_GITHUB_PROFILE_URL`
-- Email: `ADD_PROFESSIONAL_EMAIL`
+- Email: `wilson.choate.pro@gmail.com`
