@@ -11,7 +11,7 @@
 
 <p align="center">
   <video width="850" autoplay muted loop playsinline>
-      <source src="media/videos/flight-test-highlight.mp4" type="video/mp4">
+      <source src="media/videos/flight-demo-5sec.mp4" type="video/mp4"
           Your browser does not support the video tag.
   </video>video>
 </p>p>
