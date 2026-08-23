@@ -2,15 +2,11 @@
 
 ## Wiring Documentation
 
-Add a clear wiring diagram and close-up photographs. Label:
+The following assembly photographs document the wiring and component layout:
 
-- Battery positive and ground
-- ESC-to-flight-controller connection
-- Motor outputs 1–4
-- Receiver 5 V, ground, and iBUS signal
-- Flight-controller orientation arrow
-- USB access direction
-
+- **Electronics Integration** (`media/images/electronics-wiring-detail.jpg`): Complete view of the flight controller, ESC, receiver, and battery interconnection, showing how signals and power are routed through the stack.
+- - **Flight-Controller Mount** (`media/images/flight-controller-mount.jpg`): Close-up detail of the receiver and flight-controller position, showing orientation and USB access for configuration.
+  - - **Motor and Power Connector** (`media/images/arm-motor-detail.jpg`): Propeller, motor, and power connector assembly on a single arm, showing the attachment method and wire routing.
 ## Configuration Summary
 
 | Setting | Value |
