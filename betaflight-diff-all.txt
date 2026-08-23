@@ -1,0 +1,37 @@
+# Betaflight / STM32F405 (S405) 4.5.3 May 26 2025 / 14:16:26 (332fbc9c8) MSP API: 1.46
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name CORVON405
+manufacturer_id CORV
+mcu_id 0039002d3334470232363535
+
+# feature
+feature SERVO_TILT
+feature GPS
+feature RANGEFINDER
+feature TELEMETRY
+feature LED_STRIP
+feature DISPLAY
+feature OSD
+feature CHANNEL_FORWARDING
+feature TRANSPONDER
+feature ESC_SENSOR
+
+# aux
+aux 0 0 0 1800 2100 0 0
+
+# master
+set acc_calibration = 6,-72,-50,1
+set serialrx_provider = IBUS
+set motor_output_reordering = 0,2,1,3,4,5,6,7
+set yaw_motors_reversed = ON
+set gyro_1_sensor_align = CW0FLIP
+set gyro_1_align_pitch = 1800
+
+# save configuration
+save
