@@ -1,0 +1,2 @@
+Date,Configuration,Mass_g,Propeller,Battery_Start_V,Battery_End_V,Hover_Throttle,Flight_Time_s,Wind,Result,Notes
+2026-08-23,Initial successful flight,756,7-inch two-blade,12.6,12.18,40,150,Calm,PASS,Stable hover at ~30 feet altitude; flight duration 2-3 minutes at approximately 40% throttle. Betaflight blackbox logging enabled.
