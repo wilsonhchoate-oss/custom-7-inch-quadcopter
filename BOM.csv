@@ -1,0 +1,12 @@
+Category,Component,Specification,Quantity,Cost_USD,Source_URL,Notes
+Flight Control,Flight controller,"F405-based, Betaflight 4.5.3",1,30,Amazon/AliExpress,Omnibus F4 or equivalent
+Power Electronics,4-in-1 ESC,45 A,1,45,HobbyKing/Amazon,Integrated with flight controller support
+Propulsion,Brushless motor,A2212 1000KV,4,48,Amazon/HobbyKing,~$12 per motor (qty 4)
+Propulsion,Propeller,7-inch two-blade,1 set (4 total),12,Amazon,2x CW + 2x CCW orientation
+Power,LiPo battery,3S 2200 mAh 25C,1,28,Amazon,Sufficient for ~2.5 min hover time
+Radio,Transmitter,FlySky FS-i6,1,60,Amazon,Standard 6-channel transmitter
+Radio,Receiver,"FlySky, iBUS",1,18,Amazon,iBUS compatible with flight controller
+Structure,Printed frame,Custom PETG,1,5,Prusament/Prusament,~250g filament at typical material cost
+Hardware,Fasteners,"M3 bolts, connectors, wire",1 set,25,Amazon,M3 bolts; XT60 connectors; 16 AWG silicone wire
+Other,Smoke stopper / safety,Pre-flight testing equipment,1,15,Amazon,Inline fuse or current-limiting power supply
+Total,,,Qty: 16 items,286,,$30+$45+$48+$12+$28+$60+$18+$5+$25+$15
