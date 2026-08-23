@@ -9,32 +9,28 @@
        width="850">
 </p>
 
-<p align="center">
-  <video width="850" autoplay muted loop playsinline>
-      <source src="media/videos/fflight-test-highlight.mp4#t=0,5 type="video/mp4"
-          Your browser does not support the video tag.
-  </video>video>
-</p>p>
-
 
 <p align="center">
   <b>Mechanical Design</b> · <b>Additive Manufacturing</b> · <b>Electronics Integration</b> · <b>Flight Controls</b> · <b>Testing & Troubleshooting</b>
 </p>
 
-
 ## Flight Demonstration
 
-The custom quadcopter successfully achieved takeoff, stable hover, and controlled flight after iterative mechanical and software refinement (full test log in [Testing and Validation](docs/TESTING.md)).
+The custom quadcopter successfully achieved takeoff, stable hover, and controlled flight after iterative mechanical and software refinement.
 
-> 🎥 **Flight test video:** See [flight-test-highlight.mp4](media/videos/flight-test-highlight.mp4) for stable hover and controlled flight at ~200 feet altitude. Additional flight documentation and CAD renders below.
+<p align="center">
+  <a href="https://youtube.com/shorts/He_OBPB06JE" target="_blank">
+    <img src="https://img.youtube.com/vi/He_OBPB06JE/0.jpg" alt="Flight test video" width="600">
+  </a>
+</p>
+
+**[Watch the flight test →](https://youtube.com/shorts/He_OBPB06JE)** This demonstrates stable hover and controlled flight. Full test details in [Testing and Validation](docs/TESTING.md).
 
 
 
 ## Project Overview
 
-I wanted to learn everything end-to-end. So instead of buying a kit, I designed the frame in Fusion 360, printed it in PETG, integrated all the electronics and motors, and got it flying. It's been a really fun way to learn about how all these systems actually work.
-
-
+I wanted to learn everything end-to-end. So instead of buying a kit, I designed the frame in Fusion 360, printed it in PETG, integrated all the electronics and motors, and got it flying. It's been a really fun way to learn about how all these systems actually work—from CAD design to 3D printing to flight control.
 
 ### Final Result
 
@@ -50,9 +46,7 @@ I wanted to learn everything end-to-end. So instead of buying a kit, I designed 
 
 ## Why I Built It
 
-Honestly, I just wanted to build a drone and understand how everything works. I wanted to learn how all the parts—motors, controllers, propellers, radio—actually work together as a system. And yeah, I wanted to actually fly something I built myself.
-
-Beyond that, I also wanted to create a custom frame that I could iterate on and improve over time. Every drone project I do teaches me something new, and I can take those lessons and build better versions. That's what excites me about engineering—the continuous improvement cycle and the hands-on learning that comes with it.
+Honestly, I just wanted to build a drone and understand how everything works. I wanted to learn how all the parts—motors, controllers, propellers, radio—actually work together as a system. And yeah, I wanted to actually fly something I built myself. Beyond that, I also wanted to create a custom frame that I could iterate on and improve over time. Every drone project teaches me something new, and I can take those lessons and build better versions. That's what excites me about engineering—the continuous improvement cycle and the hands-on learning that comes with it.
 
 
 ## Engineering Development Process
