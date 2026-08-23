@@ -9,6 +9,13 @@
        width="850">
 </p>
 
+<p align="center">
+  <video width="850" autoplay muted loop playsinline>
+      <source src="media/videos/flight-test-highlight.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+  </video>video>
+</p>p>
+
 
 <p align="center">
   <b>Mechanical Design</b> · <b>Additive Manufacturing</b> · <b>Electronics Integration</b> · <b>Flight Controls</b> · <b>Testing & Troubleshooting</b>
