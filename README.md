@@ -20,7 +20,7 @@ The custom quadcopter successfully achieved takeoff, stable hover, and controlle
 
 <p align="center">
   <a href="https://youtube.com/shorts/He_OBPB06JE" target="_blank">
-    <img src="https://img.youtube.com/vi/He_OBPB06JE/0.jpg" alt="Flight test video" width="600">
+    <img src="media/images/hero-hover.jpg" alt="Flight test video" width="700">
   </a>
 </p>
 
